@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import { BsFillCloudMoonFill, BsFillSunFill } from 'react-icons/bs';
-import { iconsSize } from '../headerConstants';
+import { headerIconsSize, mediaQueries } from '../helpers/measures';
+import { headerHovers } from '../helpers/styleFunctions';
+
+const iconExtraSize = 5;
 
 const iconStyle = (props) => `
   color: ${props.theme.fontColor};
-  width: ${iconsSize};
-  height: ${iconsSize};
+  width: ${headerIconsSize + iconExtraSize}px;
+  height: ${headerIconsSize + iconExtraSize}px;
   cursor: pointer;
 `;
 
@@ -20,5 +23,8 @@ export const SunIcon = styled(BsFillSunFill)`
 export const ThemeIconS = styled.div`
   display: flex;
   justify-content: flex-end;
-  /* justify-content: center; */
+  @media (${mediaQueries.tablet}) {
+    order: 3;
+  }
+  ${headerHovers};
 `;

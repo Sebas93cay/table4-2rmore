@@ -1,8 +1,8 @@
-import { darkTheme, lightTheme, themesNames } from '../styledComponents/themes';
 import { createSlice } from '@reduxjs/toolkit';
+import { lightTheme, darkTheme, themesNames } from '../helpers/themes';
 
 const initialState = {
-  value: darkTheme,
+  value: lightTheme,
 };
 
 export const themeSlice = createSlice({
@@ -10,7 +10,6 @@ export const themeSlice = createSlice({
   initialState,
   reducers: {
     toggleTheme: (state) => {
-      console.log('en el reducer');
       state.value =
         state.value.name === themesNames.light ? darkTheme : lightTheme;
     },

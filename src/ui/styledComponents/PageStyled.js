@@ -5,4 +5,5 @@ export const PageS = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 800px;
+  padding: 15px 5px;
 `;

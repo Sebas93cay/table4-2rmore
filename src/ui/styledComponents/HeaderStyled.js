@@ -8,5 +8,7 @@ export const HeaderS = styled.header`
   width: 100%;
   align-items: center;
   background-color: ${(props) => props.theme.header};
-  padding: 10px 30px;
+  padding: 5px 30px;
+  border-radius: 5px;
+  box-shadow: ${(props) => props.theme.headerShadow};
 `;
