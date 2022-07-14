@@ -13,7 +13,8 @@ export const mediaQueries = {
   desktop: 1200,
 };
 
-export const shadows = {
+export const shadowsMeasures = {
   shadowAlpha: '44',
-  shadowPosition: '1px 2px 5px 2px',
+  shadowBoxPosition: `1px 2px 5px 2px`,
+  shadowTextPosition: '2px 2px 2px',
 };

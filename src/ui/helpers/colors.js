@@ -9,4 +9,15 @@ export const themeColors = {
   purple: '#9F11D0',
   lightPurple: '#EBB0FF',
   white: '#FDFDFD',
+  black: '#000000',
+};
+
+export const alphaChannelShadows = {
+  lightTheme: '88',
+  darkTheme: '66',
+};
+
+export const alphaShadowLayer = {
+  lightTheme: 'cc',
+  darkTheme: '77',
 };

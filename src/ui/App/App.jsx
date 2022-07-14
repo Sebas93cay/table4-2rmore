@@ -15,20 +15,18 @@ function App() {
   const theme = useSelector((state) => state.theme.value);
 
   return (
-    <React.Fragment>
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <Routes>
-          <Route path='/' element={<Page />}>
-            <Route index element={<Home />} />
-            <Route path='about' element={<About />} />
-            <Route path='work' element={<Work />} />
-            <Route path='contact' element={<Contact />} />
-          </Route>
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-      </ThemeProvider>
-    </React.Fragment>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Routes>
+        <Route path='/' element={<Page />}>
+          <Route index element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='work' element={<Work />} />
+          <Route path='contact' element={<Contact />} />
+        </Route>
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </ThemeProvider>
   );
 }
 
