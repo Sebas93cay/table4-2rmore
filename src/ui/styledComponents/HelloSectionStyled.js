@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../helpers/measures';
+import { ImageS } from './imagesStyled';
 
 export const HelloSectionS = styled.div`
   display: flex;
@@ -14,4 +15,21 @@ export const HelloSectionS = styled.div`
 
 export const HiMessages = styled.div`
   margin-bottom: 50px;
+`;
+
+export const ProfileImageS = styled(ImageS)`
+  border-radius: 50%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+`;
+
+export const ProfileImageContainerS = styled.div`
+  height: ${(props) => props.width + 'px'};
+  width: ${(props) => props.width + 'px'};
+  max-height: 400px;
+  max-width: 400px;
+  @media (${mediaQueries.desktop}) {
+    padding: 20px;
+  }
 `;

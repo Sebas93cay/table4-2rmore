@@ -4,11 +4,9 @@ import { TitleS, BigNameS } from '../styledComponents/TitleStyled';
 import {
   HelloSectionS,
   HiMessages,
-} from '../../ui/styledComponents/HelloSectionStyled';
-import {
-  ProfileImageS,
   ProfileImageContainerS,
-} from '../styledComponents/imagesStyled';
+  ProfileImageS,
+} from '../../ui/styledComponents/HelloSectionStyled';
 import { useComponentBounding } from '../../customHooks/useComponentSize';
 import { ParagraphS } from '../../ui/styledComponents/paragraphStyled';
 
