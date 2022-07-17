@@ -11,13 +11,3 @@ export const themeColors = {
   white: '#FDFDFD',
   black: '#000000',
 };
-
-export const alphaChannelShadows = {
-  lightTheme: '88',
-  darkTheme: '66',
-};
-
-export const alphaShadowLayer = {
-  lightTheme: 'cc',
-  darkTheme: '77',
-};

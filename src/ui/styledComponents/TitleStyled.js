@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 import {
-  shadowColor,
+  shadowText,
   titleColor,
   titleShadowColor,
 } from '../helpers/styleFunctions';
 
 export const TitleS = styled.h2`
   color: ${titleColor};
-  ${(props) => shadowColor(props)(titleShadowColor(props))}
+  ${(props) => shadowText(props)(titleShadowColor(props))}
+  margin-bottom: 1rem;
 `;
 
 export const BigNameS = styled.span`
   color: ${(props) => props.theme.bigName};
-  ${(props) => shadowColor(props)(props.theme.bigNameShadow)}
+  ${(props) => shadowText(props)(props.theme.bigNameShadow)}
+  white-space: nowrap;
 `;

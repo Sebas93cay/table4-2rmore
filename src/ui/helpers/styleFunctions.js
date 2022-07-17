@@ -1,5 +1,3 @@
-import { shadowsMeasures } from './measures';
-
 export const headerHovers = (props) => `
   cursor: pointer;
   padding: 5px;
@@ -21,13 +19,13 @@ export const titleShadowColor = (props) =>
     : 'inherit';
 
 /**
- * shadowColor sets a shadow of the same color as the text
+ * shadowText sets a shadow of the same color as the text
  */
-export const shadowColor = (props) => (textColor) =>
+export const shadowText = (props) => (textColor) =>
   `
   text-shadow: ${
     props.shadowColor || props.shadowColor === undefined
-      ? `${shadowsMeasures.shadowTextPosition} ${textColor}`
+      ? `${props.theme.shadowTextPosition} ${textColor}`
       : 'inherit'
   };
 `;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useWindowsSize } from '../../../../customHooks/useWindowsSize';
 import { NavButtonS } from '../../../styledComponents/NavButtonStyled';
 import { NavMenu } from './NavMenu';
@@ -16,17 +16,17 @@ export const Nav = () => {
   const closeMenu = () => {
     dispatch(hideMenu());
   };
+
   return (
     <>
       <NavS>
-        {width < screenWidths.tablet ? (
+        {width < screenWidths.desktop ? (
           <NavButtonS onClick={() => dispatch(toggleDisplayMenu())} />
         ) : (
           <NavMenu />
         )}
       </NavS>
-      {/* {displayedMenu && <NavMenu type={dropDownMenu} active={displayedMenu} />} */}
-      {width < screenWidths.tablet && (
+      {width < screenWidths.desktop && (
         <>
           <NavMenu
             closeMenu={closeMenu}

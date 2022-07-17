@@ -23,7 +23,7 @@ export const SunIcon = styled(BsFillSunFill)`
 export const ThemeIconS = styled.div`
   display: flex;
   justify-content: flex-end;
-  @media (${mediaQueries.tablet}) {
+  @media (${mediaQueries.desktop}) {
     order: 3;
   }
   ${headerHovers};

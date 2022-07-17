@@ -6,7 +6,7 @@ import {
 } from '../helpers/styleFunctions';
 import { dropDownMenu } from '../helpers/strings';
 import { FaTimes } from 'react-icons/fa';
-import { shadowsMeasures } from '../helpers/measures';
+// import { shadowsMeasures } from 'ui/helpers/themes';
 
 export const NavMenuContainerS = styled.div`
   ${(props) =>
@@ -17,6 +17,8 @@ export const NavMenuContainerS = styled.div`
       padding-block: 20px;
       padding-inline: 30px;
       position: absolute;
+      left: 0;
+      right: 0;
       top: 110%;
       margin-left: auto;
       margin-right: auto;
@@ -27,10 +29,10 @@ export const NavMenuContainerS = styled.div`
       background: ${props.theme.dropDownMenu};
       border-radius: 10px;
       border: 2px solid ${props.theme.dropDownMenuBorder};
-      // box-shadow: ${`${shadowsMeasures.shadowBoxPosition} ${props.theme.dropDownMenuShadow}`}
+      box-shadow: ${`${props.theme.shadowBoxPosition} ${props.theme.dropDownMenuShadow};`}
       overflow: hidden;
       height: auto;
-      ${!props.active ? `top: -1000%` : ''}
+      ${!props.active ? `top: -600%` : ''}
       `
       : ''};
 `;

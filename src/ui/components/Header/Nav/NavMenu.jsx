@@ -1,7 +1,6 @@
 import React from 'react';
 import { desktopMenu, dropDownMenu } from '../../../helpers/strings';
 import {
-  CloseNavS,
   LinkS,
   NavItemS,
   NavMenuContainerS,

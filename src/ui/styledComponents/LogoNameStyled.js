@@ -11,7 +11,7 @@ export const LogoNameS = styled.div`
   text-align: center;
   margin-inline: 10px;
   ${headerHovers};
-  @media (${mediaQueries.tablet}) {
+  @media (${mediaQueries.desktop}) {
     order: 1;
   }
 `;

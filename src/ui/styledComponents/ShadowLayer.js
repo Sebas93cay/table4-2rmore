@@ -7,6 +7,7 @@ export const ShadowLayer = styled.div`
   height: 400vh;
   width: 100vw;
   top: -400vh;
+  left: 0;
   background: linear-gradient(
     180deg,
     ${(props) => props.theme.shadowLayer},
