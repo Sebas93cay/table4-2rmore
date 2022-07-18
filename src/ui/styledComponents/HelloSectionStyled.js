@@ -27,9 +27,11 @@ export const ProfileImageS = styled(ImageS)`
 export const ProfileImageContainerS = styled.div`
   height: ${(props) => props.width + 'px'};
   width: ${(props) => props.width + 'px'};
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 250px;
+  max-width: 250px;
   @media (${mediaQueries.desktop}) {
     padding: 40px;
+    max-height: 400px;
+    max-width: 400px;
   }
 `;

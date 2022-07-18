@@ -1,7 +1,10 @@
 import styled from 'styled-components';
+import { mediaQueries } from '../helpers/measures';
 import { SectionS } from './SectionStyled';
 
-export const ProjectSectionS = styled(SectionS)`
+const thumbnailWidth = 40;
+
+export const ProjectsSectionS = styled(SectionS)`
   display: flex;
   flex-direction: column;
 `;
@@ -10,11 +13,9 @@ export const ProjectsContainerS = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding-inline: 1rem; */
 `;
 
 export const ProjectItemContainerS = styled.div`
-  /* position: absolute; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -22,6 +23,11 @@ export const ProjectItemContainerS = styled.div`
   align-items: center;
   margin-block-end: 4rem;
   max-width: 400px;
+  @media (${mediaQueries.tablet}) {
+    flex-direction: ${(props) => (props.reverse ? 'row-reverse' : 'row')};
+    max-width: inherit;
+    justify-content: space-around;
+  }
 `;
 
 export const ProjectThumbnailContainerS = styled.div`
@@ -36,6 +42,9 @@ export const ProjectThumbnailContainerS = styled.div`
     display: block;
     padding-bottom: calc(100% * (3 / 5));
   }
+  @media (${mediaQueries.tablet}) {
+    width: ${thumbnailWidth}%;
+  }
 `;
 
 export const ProjectThumbnailS = styled.img`
@@ -46,4 +55,9 @@ export const ProjectThumbnailS = styled.img`
   object-position: center;
 `;
 
-export const ProjectItemTextS = styled.div``;
+export const ProjectItemTextS = styled.div`
+  @media (${mediaQueries.tablet}) {
+    width: ${100 - thumbnailWidth}%;
+    padding-inline: 2rem;
+  }
+`;

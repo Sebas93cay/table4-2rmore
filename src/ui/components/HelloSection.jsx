@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { useComponentBounding } from '../../customHooks/useComponentSize';
 import { TitleS, BigNameS } from '../styledComponents/TitleStyled';
@@ -17,7 +17,6 @@ export const HelloSection = () => {
 
   useEffect(() => {
     setProfilePicWidth(HomePageBounding.width * 0.7);
-    console.log(profilePicWidth);
   }, [HomePageBounding]);
 
   return (

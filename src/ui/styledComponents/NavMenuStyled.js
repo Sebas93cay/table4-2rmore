@@ -13,6 +13,7 @@ export const NavMenuContainerS = styled.div`
     props.type === dropDownMenu
       ? `
       ${dropDownMenuTransition}
+      font-weight: bold;
       display: flex;
       padding-block: 20px;
       padding-inline: 30px;

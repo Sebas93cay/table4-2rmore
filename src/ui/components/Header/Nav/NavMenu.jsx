@@ -1,5 +1,5 @@
 import React from 'react';
-import { desktopMenu, dropDownMenu } from '../../../helpers/strings';
+import { desktopMenu } from '../../../helpers/strings';
 import {
   LinkS,
   NavItemS,

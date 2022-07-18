@@ -26,6 +26,5 @@ export const useComponentBounding = () => {
     return () => window.removeEventListener('resize', handleBounding);
   }, [ref]);
 
-  console.log('desde por aca', bounding);
   return { ref, bounding };
 };

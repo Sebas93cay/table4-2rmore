@@ -7,7 +7,7 @@ export const themesNames = Object.freeze({
 
 export const alphaChannelShadows = {
   lightTheme: '50',
-  darkTheme: '30',
+  darkTheme: '40',
 };
 
 export const alphaShadowLayer = {
@@ -28,7 +28,7 @@ export const lightTheme = {
   hiMessage: themeColors.purple,
   hiMessageShadow: themeColors.purple + alphaChannelShadows.lightTheme,
   dropDownMenu: themeColors.lightGreen + 'BB',
-  dropDownMenuShadow: themeColors.white + alphaChannelShadows.lightTheme,
+  dropDownMenuShadow: themeColors.white + '33',
   dropDownMenuBorder: themeColors.darkBlue,
   shadowLayer: themeColors.darkBlue + alphaShadowLayer.lightTheme,
   shadowLayerTransparent: themeColors.darkBlue + '00',
@@ -37,6 +37,10 @@ export const lightTheme = {
   projectItemBorder: themeColors.gray,
   sectionTitle: themeColors.green,
   sectionTitleShadow: themeColors.green + alphaChannelShadows.lightTheme,
+  mainButton: themeColors.green,
+  mainButtonText: themeColors.white,
+  mainButtonBorder: themeColors.lightGreen,
+  shadowBox: themeColors.gray,
 };
 
 export const darkTheme = {
@@ -52,9 +56,8 @@ export const darkTheme = {
   hiMessage: themeColors.purple,
   hiMessageShadow: themeColors.lightPurple + alphaChannelShadows.darkTheme,
   dropDownMenuBorder: themeColors.lightBlue,
-  dropDownMenu: themeColors.darkBlue + '99',
+  dropDownMenu: themeColors.darkBlue + 'aa',
   dropDownMenuShadow: themeColors.white + alphaChannelShadows.darkTheme,
-  dropDownMenuBorder: themeColors.white,
   shadowLayer: themeColors.black + alphaShadowLayer.darkTheme,
   shadowLayerTransparent: themeColors.black + '00',
   shadowBoxPosition: `1px 2px 5px 2px`,
@@ -63,4 +66,8 @@ export const darkTheme = {
   projectItemBorder: themeColors.white,
   sectionTitle: themeColors.green,
   sectionTitleShadow: themeColors.green + alphaChannelShadows.darkTheme,
+  mainButton: themeColors.green,
+  mainButtonText: themeColors.white,
+  mainButtonBorder: themeColors.lightGreen,
+  shadowBox: themeColors.gray + '00',
 };

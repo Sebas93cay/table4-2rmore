@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useWindowsSize } from '../../../../customHooks/useWindowsSize';
 import { NavButtonS } from '../../../styledComponents/NavButtonStyled';
 import { NavMenu } from './NavMenu';

@@ -6,9 +6,9 @@ import {
 } from '../helpers/styleFunctions';
 
 export const TitleS = styled.h2`
+  font-size: 2rem;
   color: ${titleColor};
   ${(props) => shadowText(props)(titleShadowColor(props))}
-  margin-bottom: 1rem;
 `;
 
 export const BigNameS = styled.span`
@@ -18,7 +18,9 @@ export const BigNameS = styled.span`
 `;
 
 export const TitleSectionS = styled(TitleS)`
+  font-size: 1.8rem;
   margin: 0;
+  margin-inline-end: 1rem;
 `;
 
 export const SubTitleS = styled.h3``;

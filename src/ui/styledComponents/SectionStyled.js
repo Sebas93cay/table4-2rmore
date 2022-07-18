@@ -7,6 +7,7 @@ export const SectionS = styled.div`
 
 export const SectionHeaderS = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-block-end: 2rem;
