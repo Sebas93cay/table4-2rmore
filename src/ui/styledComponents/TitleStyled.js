@@ -16,3 +16,9 @@ export const BigNameS = styled.span`
   ${(props) => shadowText(props)(props.theme.bigNameShadow)}
   white-space: nowrap;
 `;
+
+export const TitleSectionS = styled(TitleS)`
+  margin: 0;
+`;
+
+export const SubTitleS = styled.h3``;

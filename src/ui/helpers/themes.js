@@ -6,7 +6,7 @@ export const themesNames = Object.freeze({
 });
 
 export const alphaChannelShadows = {
-  lightTheme: '88',
+  lightTheme: '50',
   darkTheme: '30',
 };
 
@@ -33,7 +33,10 @@ export const lightTheme = {
   shadowLayer: themeColors.darkBlue + alphaShadowLayer.lightTheme,
   shadowLayerTransparent: themeColors.darkBlue + '00',
   shadowBoxPosition: `1px 2px 5px 2px`,
-  shadowTextPosition: '2px 2px 2px',
+  shadowTextPosition: '2px 2px 0px',
+  projectItemBorder: themeColors.gray,
+  sectionTitle: themeColors.green,
+  sectionTitleShadow: themeColors.green + alphaChannelShadows.lightTheme,
 };
 
 export const darkTheme = {
@@ -55,6 +58,9 @@ export const darkTheme = {
   shadowLayer: themeColors.black + alphaShadowLayer.darkTheme,
   shadowLayerTransparent: themeColors.black + '00',
   shadowBoxPosition: `1px 2px 5px 2px`,
-  shadowTextPosition: '2px 2px 5px',
+  shadowTextPosition: '2px 2px 1px',
   shadowAlpha: '44',
+  projectItemBorder: themeColors.white,
+  sectionTitle: themeColors.green,
+  sectionTitleShadow: themeColors.green + alphaChannelShadows.darkTheme,
 };

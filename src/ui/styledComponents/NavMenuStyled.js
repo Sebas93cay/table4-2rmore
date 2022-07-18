@@ -32,7 +32,7 @@ export const NavMenuContainerS = styled.div`
       box-shadow: ${`${props.theme.shadowBoxPosition} ${props.theme.dropDownMenuShadow};`}
       overflow: hidden;
       height: auto;
-      ${!props.active ? `top: -600%` : ''}
+      ${!props.active ? `top: -800%` : ''}
       `
       : ''};
 `;

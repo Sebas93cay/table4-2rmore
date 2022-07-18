@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../helpers/measures';
 import { ImageS } from './imagesStyled';
+import { SectionS } from './SectionStyled';
 
-export const HelloSectionS = styled.div`
+export const HelloSectionS = styled(SectionS)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block: 50px;
   @media (${mediaQueries.desktop}) {
     display: grid;
     grid-template-columns: 400px 1fr;
   }
 `;
 
-export const HiMessages = styled.div`
+export const HiMessagesS = styled.div`
   margin-bottom: 50px;
 `;
 
@@ -30,6 +30,6 @@ export const ProfileImageContainerS = styled.div`
   max-height: 400px;
   max-width: 400px;
   @media (${mediaQueries.desktop}) {
-    padding: 20px;
+    padding: 40px;
   }
 `;

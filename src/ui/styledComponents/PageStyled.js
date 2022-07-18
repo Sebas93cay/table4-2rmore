@@ -6,7 +6,7 @@ export const PageS = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 820px;
-  padding: 15px 20px;
+  padding: 15px 25px;
   @media (${mediaQueries.desktop}) {
     padding-inline: 0;
   }

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../helpers/measures';
-import { shadowsMeasures } from '../helpers/themes';
 
 export const HeaderS = styled.header`
   /* display: grid;

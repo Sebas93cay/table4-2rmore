@@ -1,42 +1,30 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { SectionS } from '../styledComponents/SectionStyled';
-import { TitleS, BigNameS } from '../styledComponents/TitleStyled';
-import {
-  HelloSectionS,
-  HiMessages,
-  ProfileImageContainerS,
-  ProfileImageS,
-} from '../../ui/styledComponents/HelloSectionStyled';
-import { useComponentBounding } from '../../customHooks/useComponentSize';
-import { ParagraphS } from '../../ui/styledComponents/paragraphStyled';
+import React from 'react';
+import { SectionHeaderS, SectionS } from '../styledComponents/SectionStyled';
+import { TitleSectionS } from '../styledComponents/TitleStyled';
+import { ProjectSectionS } from '../styledComponents/ProjectsSectionStyled';
+import { projectList } from '../../Data/projects';
+import { ProjectItem } from '../ProjectItem';
+import { ProjectsContainerS } from '../styledComponents/ProjectsSectionStyled';
+import { HelloSection } from '../components/HelloSection';
 
 export const Home = () => {
-  const { bounding: HomePageBounding, ref: HomePageRef } =
-    useComponentBounding();
-  const [profilePicWidth, setProfilePicWidth] = useState(0);
-
-  useEffect(() => {
-    setProfilePicWidth(HomePageBounding.width * 0.7);
-    console.log(profilePicWidth);
-  }, [HomePageBounding]);
   return (
     <>
-      <SectionS ref={HomePageRef}>
-        <HelloSectionS>
-          <HiMessages>
-            <TitleS message='hiMessage'>Hey Hi!!</TitleS>
-            <TitleS>
-              My name is <BigNameS>Sebastian Caicedo</BigNameS>
-            </TitleS>
-            <ParagraphS>
-              Curious and ever learning Full-Stack Software developer from
-              Colombia
-            </ParagraphS>
-          </HiMessages>
-          <ProfileImageContainerS width={profilePicWidth}>
-            <ProfileImageS src='/images/perfil.jpg' alt='' />
-          </ProfileImageContainerS>
-        </HelloSectionS>
+      <SectionS>
+        <HelloSection />
+        <ProjectSectionS>
+          <SectionHeaderS>
+            <TitleSectionS message='sectionTitle'>
+              Featured Projects
+            </TitleSectionS>
+            <button>See All</button>
+          </SectionHeaderS>
+          <ProjectsContainerS>
+            {projectList.map((project) => (
+              <ProjectItem {...project} key={project.name}></ProjectItem>
+            ))}
+          </ProjectsContainerS>
+        </ProjectSectionS>
       </SectionS>
     </>
   );
