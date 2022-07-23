@@ -17,7 +17,7 @@ export const BigNameS = styled.span`
   white-space: nowrap;
 `;
 
-export const TitleSectionS = styled(TitleS)`
+export const SectionTitleS = styled(TitleS)`
   font-size: 1.8rem;
   margin: 0;
   margin-inline-end: 1rem;

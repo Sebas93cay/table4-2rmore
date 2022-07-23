@@ -18,8 +18,6 @@ export const NavMenuContainerS = styled.div`
       padding-block: 20px;
       padding-inline: 30px;
       position: absolute;
-      left: 0;
-      right: 0;
       top: 110%;
       margin-left: auto;
       margin-right: auto;

@@ -4,11 +4,6 @@ import { SectionS } from './SectionStyled';
 
 const thumbnailWidth = 40;
 
-export const ProjectsSectionS = styled(SectionS)`
-  display: flex;
-  flex-direction: column;
-`;
-
 export const ProjectsContainerS = styled.div`
   display: flex;
   flex-direction: column;

@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { SectionHeaderS } from '../styledComponents/SectionStyled';
-import { TitleSectionS } from '../styledComponents/TitleStyled';
-import { ProjectsSectionS } from '../styledComponents/ProjectsSectionStyled';
+import {
+  SectionHeaderS,
+  TitledSectionS,
+} from '../styledComponents/SectionStyled';
+import { SectionTitleS } from '../styledComponents/TitleStyled';
 import { projectList } from '../../Data/projects';
 import { ProjectItem } from '../ProjectItem';
 import { ProjectsContainerS } from '../styledComponents/ProjectsSectionStyled';
@@ -10,9 +12,9 @@ import { MainButton } from '../styledComponents/ButtonsStyled';
 
 export const ProjectsSection = () => {
   return (
-    <ProjectsSectionS>
+    <TitledSectionS>
       <SectionHeaderS>
-        <TitleSectionS message='sectionTitle'>Featured Projects</TitleSectionS>
+        <SectionTitleS message='sectionTitle'>Featured Projects</SectionTitleS>
         <MainButton>See All</MainButton>
       </SectionHeaderS>
       <ProjectsContainerS>
@@ -24,6 +26,6 @@ export const ProjectsSection = () => {
           ></ProjectItem>
         ))}
       </ProjectsContainerS>
-    </ProjectsSectionS>
+    </TitledSectionS>
   );
 };

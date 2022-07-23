@@ -12,3 +12,8 @@ export const SectionHeaderS = styled.div`
   align-items: center;
   margin-block-end: 2rem;
 `;
+
+export const TitledSectionS = styled(SectionS)`
+  display: flex;
+  flex-direction: column;
+`;
