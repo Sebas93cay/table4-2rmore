@@ -41,6 +41,8 @@ export const lightTheme = {
   mainButtonText: themeColors.white,
   mainButtonBorder: themeColors.lightGreen,
   shadowBox: themeColors.gray,
+  spanDescriptor: themeColors.gray,
+  imageShadow: `${themeColors.gray}`,
 };
 
 export const darkTheme = {
@@ -70,4 +72,6 @@ export const darkTheme = {
   mainButtonText: themeColors.white,
   mainButtonBorder: themeColors.lightGreen,
   shadowBox: themeColors.gray + '00',
+  spanDescriptor: themeColors.gray,
+  imageShadow: `${themeColors.lightBlue}44`,
 };

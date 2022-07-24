@@ -10,7 +10,7 @@ export const SectionHeaderS = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-block-end: 2rem;
+  margin-block-end: 1.5rem;
 `;
 
 export const TitledSectionS = styled(SectionS)`

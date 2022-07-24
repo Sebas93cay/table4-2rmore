@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import {
   SectionHeaderS,
   TitledSectionS,
@@ -11,15 +11,22 @@ import {
   AboutText,
 } from '../styledComponents/aboutStyled';
 import { ParagraphS } from '../styledComponents/paragraphStyled';
+import { SpanDescriptorS } from '../styledComponents/imageDescriptorStyled';
+import { aboutImages } from '../../Data/images';
 
 export const AboutSection = () => {
+  const image = useMemo(
+    () => aboutImages[Math.floor(Math.random() * aboutImages.length)],
+    [],
+  );
+
   return (
     <TitledSectionS>
       <SectionHeaderS>
         <SectionTitleS message='sectionTitle'>About</SectionTitleS>{' '}
       </SectionHeaderS>
-      <AboutContentS>
-        <AboutText>
+      <AboutContentS {...image}>
+        <AboutText changeToRow={image.changeToRow}>
           <ParagraphS>
             Hi! I'm Sebastian Caicedo, a curious and ever-learning software
             developer from Colombia. 👋
@@ -58,9 +65,9 @@ export const AboutSection = () => {
             chat
           </ParagraphS>
         </AboutText>
-        <AboutImageContainer>
-          <AboutImage src='images/about0.jpg' alt='' />
-          <span>This is the description of the image</span>
+        <AboutImageContainer changeToRow={image.changeToRow}>
+          <AboutImage {...image} src={`images/${image.image}`} alt='' />
+          <SpanDescriptorS>{image.description}</SpanDescriptorS>
         </AboutImageContainer>
       </AboutContentS>
     </TitledSectionS>
