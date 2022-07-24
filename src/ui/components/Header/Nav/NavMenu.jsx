@@ -23,7 +23,7 @@ export const NavMenu = ({
         <NavItemS type={type}>Resume</NavItemS>
         <NavItemS type={type}>
           <LinkS onClick={closeMenu} to='work'>
-            Work
+            Projects
           </LinkS>
         </NavItemS>
         {/* <NavItemS>Lessons</NavItemS> */}

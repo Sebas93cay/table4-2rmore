@@ -28,7 +28,7 @@ export const ProjectItemContainerS = styled.div`
 export const ProjectThumbnailContainerS = styled.div`
   position: relative;
   width: 100%;
-  border: 1px solid ${(props) => props.theme.projectItemBorder};
+  /* border: 1px solid ${(props) => props.theme.projectItemBorder}; */
   border-radius: 10px;
   overflow: hidden;
   margin-block-end: 1rem;
@@ -40,6 +40,8 @@ export const ProjectThumbnailContainerS = styled.div`
   @media (${mediaQueries.tablet}) {
     width: ${thumbnailWidth}%;
   }
+  box-shadow: ${(props) =>
+    `${props.theme.shadowBoxPosition} ${props.theme.imageShadow}`};
 `;
 
 export const ProjectThumbnailS = styled.img`

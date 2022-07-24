@@ -18,7 +18,7 @@ export const ProjectsSection = () => {
         <MainButton>See All</MainButton>
       </SectionHeaderS>
       <ProjectsContainerS>
-        {projectList.map((project, index) => (
+        {projectList.slice(0, 2).map((project, index) => (
           <ProjectItem
             {...project}
             key={project.name}

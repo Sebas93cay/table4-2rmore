@@ -11,6 +11,7 @@ export const HeaderS = styled.header`
   background-color: ${(props) => props.theme.header};
   padding: 5px 30px;
   border-radius: 5px;
+  margin-bottom: 3rem;
   box-shadow: ${(props) =>
     `${props.theme.shadowBoxPosition} ${props.theme.headerShadow}`};
   position: relative;
