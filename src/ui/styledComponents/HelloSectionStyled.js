@@ -17,21 +17,25 @@ export const HiMessagesS = styled.div`
   margin-bottom: 50px;
 `;
 
+export const ProfileImageContainerS = styled.div`
+  width: 70%;
+  max-height: 250px;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  @media (${mediaQueries.desktop}) {
+    width: 100%;
+    max-height: none;
+    max-width: none;
+  }
+`;
+
 export const ProfileImageS = styled(ImageS)`
   border-radius: 50%;
   object-fit: cover;
-  height: 100%;
   width: 100%;
-`;
-
-export const ProfileImageContainerS = styled.div`
-  height: ${(props) => props.width + 'px'};
-  width: ${(props) => props.width + 'px'};
-  max-height: 250px;
-  max-width: 250px;
-  @media (${mediaQueries.desktop}) {
-    padding: 40px;
-    max-height: 400px;
-    max-width: 400px;
-  }
+  width: 300px;
+  aspect-ratio: 1;
+  box-shadow: ${(props) =>
+    `${props.theme.shadowBoxPosition} ${props.theme.imageShadow}`};
 `;

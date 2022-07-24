@@ -43,6 +43,7 @@ export const lightTheme = {
   shadowBox: themeColors.gray,
   spanDescriptor: themeColors.gray,
   imageShadow: `${themeColors.gray}`,
+  sectionHeaderBorderBottom: themeColors.green,
 };
 
 export const darkTheme = {
@@ -74,4 +75,5 @@ export const darkTheme = {
   shadowBox: themeColors.gray + '00',
   spanDescriptor: themeColors.gray,
   imageShadow: `${themeColors.lightBlue}60`,
+  sectionHeaderBorderBottom: themeColors.green,
 };

@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionS = styled.div`
-  margin-block-start: 1.5rem;
-  margin-block-end: 6rem;
+  margin-block-end: 4rem;
 `;
 
 export const SectionHeaderS = styled.div`
@@ -10,6 +9,8 @@ export const SectionHeaderS = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid ${(props) => props.theme.sectionHeaderBorderBottom};
   margin-block-end: 1.5rem;
 `;
 

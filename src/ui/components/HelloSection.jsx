@@ -11,16 +11,8 @@ import {
 import { ParagraphS } from '../../ui/styledComponents/paragraphStyled';
 
 export const HelloSection = () => {
-  const { bounding: HomePageBounding, ref: HelloSectionRef } =
-    useComponentBounding();
-  const [profilePicWidth, setProfilePicWidth] = useState(0);
-
-  useEffect(() => {
-    setProfilePicWidth(HomePageBounding.width * 0.7);
-  }, [HomePageBounding]);
-
   return (
-    <HelloSectionS ref={HelloSectionRef}>
+    <HelloSectionS>
       <HiMessagesS>
         <TitleS message='hiMessage'>Hey Hi!!</TitleS>
         <TitleS>
@@ -30,7 +22,7 @@ export const HelloSection = () => {
           Curious and ever learning Full-Stack Software developer from Colombia
         </ParagraphS>
       </HiMessagesS>
-      <ProfileImageContainerS width={profilePicWidth}>
+      <ProfileImageContainerS>
         <ProfileImageS src='/images/perfil.jpg' alt='' />
       </ProfileImageContainerS>
     </HelloSectionS>
